@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 					}
 				},
 				'files': {
-					'koi8u.js': ['src/koi8u.js']
+					'koi8-u.js': ['src/koi8-u.js']
 				}
 			},
 			'build-tests': {

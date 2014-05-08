@@ -3,7 +3,7 @@
 	"version": "0.1.1",
 	"description": "A robust koi8-u encoder/decoder written in JavaScript.",
 	"homepage": "http://mths.be/koi8-u",
-	"main": "koi8u.js",
+	"main": "koi8-u.js",
 	"keywords": [
 		"codec",
 		"decoder",
@@ -30,7 +30,7 @@
 	},
 	"files": [
 		"LICENSE-MIT.txt",
-		"koi8u.js"
+		"koi8-u.js"
 	],
 	"directories": {
 		"test": "tests"

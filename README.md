@@ -48,10 +48,10 @@ Using an AMD loader like [RequireJS](http://requirejs.org/):
 require(
   {
     'paths': {
-      'koi8u': 'path/to/koi8u'
+      'koi8-u': 'path/to/koi8-u'
     }
   },
-  ['koi8u'],
+  ['koi8-u'],
   function(koi8u) {
     console.log(koi8u);
   }
