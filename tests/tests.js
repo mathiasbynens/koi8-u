@@ -35,7 +35,7 @@
 
 	// explicitly call `QUnit.module()` instead of `module()`
 	// in case we are in a CLI environment
-	QUnit.module('koi8u');
+	QUnit.module('koi8-u');
 
 	test('koi8u.encode', function() {
 		equal(
