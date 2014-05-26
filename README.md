@@ -1,4 +1,4 @@
-# koi8-u [![Build status](https://travis-ci.org/mathiasbynens/koi8-u.svg?branch=master)](https://travis-ci.org/mathiasbynens/koi8-u) [![Dependency status](https://gemnasium.com/mathiasbynens/koi8-u.svg)](https://gemnasium.com/mathiasbynens/koi8-u)
+# koi8-u [![Build status](https://travis-ci.org/mathiasbynens/koi8-u.svg?branch=master)](https://travis-ci.org/mathiasbynens/koi8-u) [![Code coverage status](http://img.shields.io/coveralls/mathiasbynens/koi8-u/master.svg)](https://coveralls.io/r/mathiasbynens/koi8-u) [![Dependency status](https://gemnasium.com/mathiasbynens/koi8-u.svg)](https://gemnasium.com/mathiasbynens/koi8-u)
 
 _koi8-u_ is a robust JavaScript implementation of [the koi8-u character encoding as defined by the Encoding Standard](http://encoding.spec.whatwg.org/#koi8-u).
 
