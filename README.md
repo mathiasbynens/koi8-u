@@ -1,4 +1,4 @@
-# koi8-u [![Build status](https://travis-ci.org/mathiasbynens/koi8-u.svg?branch=master)](https://travis-ci.org/mathiasbynens/koi8-u) [![Code coverage status](http://img.shields.io/coveralls/mathiasbynens/koi8-u/master.svg)](https://coveralls.io/r/mathiasbynens/koi8-u) [![Dependency status](https://gemnasium.com/mathiasbynens/koi8-u.svg)](https://gemnasium.com/mathiasbynens/koi8-u)
+# koi8-u [![Build status](https://travis-ci.org/mathiasbynens/koi8-u.svg?branch=master)](https://travis-ci.org/mathiasbynens/koi8-u) [![Code coverage status](https://coveralls.io/repos/mathiasbynens/koi8-u/badge.svg)](https://coveralls.io/r/mathiasbynens/koi8-u) [![Dependency status](https://gemnasium.com/mathiasbynens/koi8-u.svg)](https://gemnasium.com/mathiasbynens/koi8-u)
 
 _koi8-u_ is a robust JavaScript implementation of [the koi8-u character encoding as defined by the Encoding Standard](http://encoding.spec.whatwg.org/#koi8-u).
 
@@ -6,7 +6,7 @@ This encoding is known under the following names: , and koi8-u.
 
 ## Installation
 
-Via [npm](http://npmjs.org/):
+Via [npm](https://www.npmjs.com/):
 
 ```bash
 npm install koi8-u
@@ -30,7 +30,7 @@ In a browser:
 <script src="koi8-u.js"></script>
 ```
 
-In [Narwhal](http://narwhaljs.org/), [Node.js](http://nodejs.org/), and [RingoJS](http://ringojs.org/):
+In [Node.js](https://nodejs.org/), [io.js](https://iojs.org/), [Narwhal](http://narwhaljs.org/), and [RingoJS](http://ringojs.org/):
 
 ```js
 var koi8u = require('koi8-u');
@@ -106,7 +106,7 @@ var text = koi8u.decode(encodedData, {
 
 ## Support
 
-_koi8-u_ is designed to work in at least Node.js v0.10.0, Narwhal 0.3.2, RingoJS 0.8-0.9, PhantomJS 1.9.0, Rhino 1.7RC4, as well as old and modern versions of Chrome, Firefox, Safari, Opera, and Internet Explorer.
+_koi8-u_ is designed to work in at least Node.js v0.10.0, io.js v1.0.0, Narwhal 0.3.2, RingoJS 0.8-0.11, PhantomJS 1.9.0, Rhino 1.7RC4, as well as old and modern versions of Chrome, Firefox, Safari, Opera, and Internet Explorer.
 
 ## Unit tests & code coverage
 
@@ -118,7 +118,7 @@ To generate the code coverage report, use `grunt cover`.
 
 ## Notes
 
-[Similar modules for other single-byte legacy encodings are available.](https://www.npmjs.org/browse/keyword/legacy-encoding)
+[Similar modules for other single-byte legacy encodings are available.](https://www.npmjs.com/browse/keyword/legacy-encoding)
 
 ## Author
 
