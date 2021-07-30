@@ -1,4 +1,4 @@
-/*! https://mths.be/koi8-u v1.0.1 by @mathias | MIT license */
+/*! https://mths.be/koi8-u v1.0.2 by @mathias | MIT license */
 ;(function() {
 
 	var object = {};
@@ -102,7 +102,7 @@
 		labels: [
 			'koi8-u'
 		],
-		version: '1.0.1',
+		version: '1.0.2',
 	};
 
 	module.exports = koi8u;
