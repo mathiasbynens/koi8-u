@@ -1,4 +1,4 @@
-# koi8-u [![koi8-u on npm](https://img.shields.io/npm/v/koi8-u)](https://www.npmjs.com/package/koi8-u)
+# koi8-u [![Build status](https://github.com/mathiasbynens/koi8-u/workflows/run-checks/badge.svg)](https://github.com/mathiasbynens/koi8-u/actions?query=workflow%3Arun-checks) [![koi8-u on npm](https://img.shields.io/npm/v/koi8-u)](https://www.npmjs.com/package/koi8-u)
 
 _koi8-u_ is a robust JavaScript implementation of [the koi8-u character encoding as defined by the Encoding Standard](https://encoding.spec.whatwg.org/#koi8-u).
 
