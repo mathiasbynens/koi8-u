@@ -1,6 +1,6 @@
-const assert = require('assert');
+import assert from 'node:assert';
 
-const koi8u = require('../koi8-u.js');
+import * as koi8u from '../koi8-u.mjs';
 
 console.log('Testing `koi8u.encode`…');
 assert.strictEqual(
@@ -109,3 +109,7 @@ assert.throws(
 	Error,
 	'Mode names are case-insensitive'
 );
+
+console.log('Testing `koi8u.labels`…');
+assert.ok(Array.isArray(koi8u.labels));
+assert.ok(koi8u.labels.length > 0);
