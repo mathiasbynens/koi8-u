@@ -1,4 +1,4 @@
-# koi8-u [![Build status](https://travis-ci.org/mathiasbynens/koi8-u.svg?branch=master)](https://travis-ci.org/mathiasbynens/koi8-u) [![Code coverage status](https://coveralls.io/repos/mathiasbynens/koi8-u/badge.svg)](https://coveralls.io/r/mathiasbynens/koi8-u) [![Dependency status](https://gemnasium.com/mathiasbynens/koi8-u.svg)](https://gemnasium.com/mathiasbynens/koi8-u)
+# koi8-u [![koi8-u on npm](https://img.shields.io/npm/v/koi8-u)](https://www.npmjs.com/package/koi8-u)
 
 _koi8-u_ is a robust JavaScript implementation of [the koi8-u character encoding as defined by the Encoding Standard](https://encoding.spec.whatwg.org/#koi8-u).
 
@@ -18,32 +18,10 @@ In a browser:
 <script src="koi8-u.js"></script>
 ```
 
-In [Node.js](https://nodejs.org/), [io.js](https://iojs.org/), [Narwhal](http://narwhaljs.org/), and [RingoJS](http://ringojs.org/):
+In [Node.js](https://nodejs.org/):
 
 ```js
-var koi8u = require('koi8-u');
-```
-
-In [Rhino](https://www.mozilla.org/rhino/):
-
-```js
-load('koi8u.js');
-```
-
-Using an AMD loader like [RequireJS](http://requirejs.org/):
-
-```js
-require(
-  {
-    'paths': {
-      'koi8-u': 'path/to/koi8-u'
-    }
-  },
-  ['koi8-u'],
-  function(koi8u) {
-    console.log(koi8u);
-  }
-);
+const koi8u = require('koi8-u');
 ```
 
 ## API
@@ -68,7 +46,7 @@ The optional `options` object and its `mode` property can be used to set the [er
 
 ```js
 const encodedData = koi8u.encode(text, {
-  'mode': 'html'
+  mode: 'html'
 });
 // If `text` contains a symbol that cannot be represented in koi8-u,
 // instead of throwing an error, it will return an HTML entity for the symbol.
@@ -86,17 +64,13 @@ The optional `options` object and its `mode` property can be used to set the [er
 
 ```js
 const text = koi8u.decode(encodedData, {
-  'mode': 'fatal'
+  mode: 'fatal'
 });
 // If `encodedData` contains an invalid byte for the koi8-u encoding,
 // instead of replacing it with U+FFFD in the output, an error is thrown.
 ```
 
 For decoding a buffer (e.g. from `fs.readFile`) use `buffer.toString('binary')` to get the byte string which `decode` takes.
-
-## Support
-
-_koi8-u_ is designed to work in at least Node.js v0.10.0, io.js v1.0.0, Narwhal 0.3.2, RingoJS 0.8-0.11, PhantomJS 1.9.0, Rhino 1.7RC4, as well as old and modern versions of Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer.
 
 ## Notes
 
