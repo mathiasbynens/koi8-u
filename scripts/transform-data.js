@@ -55,18 +55,24 @@ fs.writeFileSync(
 	format(result.encoded)
 );
 
+const TEMPLATE_OPTIONS = {
+	interpolate: /<\%=([\s\S]+?)%\>/g,
+};
+
 // tests/tests.src.js → tests/tests.js
 const TEST_TEMPLATE = fs.readFileSync('./tests/tests.src.mjs', 'utf8');
-const createTest = template(TEST_TEMPLATE, {
-	interpolate: /<\%=([\s\S]+?)%\>/g,
-});
+const createTest = template(TEST_TEMPLATE, TEMPLATE_OPTIONS);
 const testCode = createTest(require('./export-data.js'));
 fs.writeFileSync('./tests/tests.mjs', testCode);
 
-// src/koi8-u.src.mjs -> koi8-u.mjs
+// src/koi8-u.src.mjs → koi8-u.mjs
 const LIB_TEMPLATE = fs.readFileSync('./src/koi8-u.src.mjs', 'utf8');
-const createLib = template(LIB_TEMPLATE, {
-	interpolate: /<\%=([\s\S]+?)%\>/g,
-});
+const createLib = template(LIB_TEMPLATE, TEMPLATE_OPTIONS);
 const libCode = createLib(require('./export-data.js'));
 fs.writeFileSync('./koi8-u.mjs', libCode);
+
+// src/koi8-u.d.ts → koi8-u.d.ts
+const TYPES_TEMPLATE = fs.readFileSync('./src/koi8-u.d.ts', 'utf8');
+const createTypes = template(TYPES_TEMPLATE, TEMPLATE_OPTIONS);
+const typesCode = createTypes(require('./export-data.js'));
+fs.writeFileSync('./koi8-u.d.ts', typesCode);
